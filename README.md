@@ -5,7 +5,8 @@ tbk项目
 
 时间|标题|备注
 ---|---|---
-2017-12-13|开发|开发长尾关键词挖掘功能 http://localhost/index.php?m=Keywords&a=collect&keyword=美白
+2017-12-17|开发|开发长尾递归关键词挖掘功能
+2017-12-13|开发|开发长尾关键词挖掘功能 http://localhost/index.php?m=Keywords&a=Index
 2017-12-13|开发|包装返回数据为JSON格式
 2017-12-13|开发|创建基类
 2017-12-12|创建|建立github版本库
