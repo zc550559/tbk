@@ -1,6 +1,8 @@
 <?php
 class BaseAction extends Action{
 
+	public $localFlag = false;
+
 	//返回json数据
 	private $json = array();
 	
@@ -16,8 +18,13 @@ class BaseAction extends Action{
 	 * @return [type]
 	 */
 	public function showData($data){
-		$this->json['data'] = $data;
-		$this->showJSON();
+		if($this->localFlag){
+			$this->showLocal(false);
+			return $data;
+		}else{
+			$this->json['data'] = $data;
+			$this->showJSON();
+		}
 	}
 
 	/**
@@ -39,6 +46,15 @@ class BaseAction extends Action{
 		header("text/html;charset=utf-8");
 		echo json_encode($this->json,JSON_UNESCAPED_UNICODE);
 		die;
+	}
+
+
+	public function showLocal($flag=true){
+		if($flag){
+			$this->localFlag = true;
+		}else{
+			$this->localFlag = false;
+		}
 	}
 
 	/**
