@@ -4,10 +4,10 @@
  * 采集百度长尾关键词
  * 1.通过关键词搜索
  * 2.过滤长尾关键词
- * 
- * todo
  * 3.每个关键词递归查询
  *
+ * todo
+ * 数据去重
  * 
  * 4.根据不同分类存储不同类型,如城市/地区
  * 5.查询n个返回
@@ -19,14 +19,14 @@ class KeywordsAction extends BaseAction{
 	//关键词列表
 	private static $keywordList = array();
 	//关键词下标
-	private $keywordIndex = 0;
+	private static $keywordIndex = 0;
 	
 	/**
 	 * 入口
 	 */
 	public function Index(){
 		echo '<h1>长尾关键词挖掘器</h1>';
-		$this->collects("美白");
+		$this->collects();
 	}
 
 	/**
@@ -52,27 +52,38 @@ class KeywordsAction extends BaseAction{
 		return $this->showData($matches[1]);
 	}
 
+	public function collects(){
+		$this->display('collects');
+	}
+
 
 	/**
 	 * 递归采集关键词
 	 * @param  [type] $keyword [description]
 	 * @return [type]          [description]
 	 */
-	public function collects($keyword){
+	public function _collects($keyword){
+		set_time_limit(0);
+		//1.本地调用
 		$this->showLocal();
-		//1.采集关键词
+		//2.采集关键词
 		$data = $this->collect($keyword);
-		//2.存储到list
-		//self::keywordList = array_merge(self::keywordList, $data);
-		dump(self::keywordList);
-		die;
-		//3.从list中取第一个关键词
-		$keyword = $this->keywordList[$this->index];
-		$this->index++;
+		//3.存储到list
+		self::$keywordList = array_merge(self::$keywordList, $data);
 
-		$data = $this->collect($keyword);
-		$this->keywordList = array_merge($this->keywordList, $data);
-		dump($this->keywordList);
+		ob_flush();
+		flush();
+		dump(self::$keywordList);
+
+		//4.从list中取下一个关键词
+		$keyword = self::$keywordList[self::$keywordIndex++];
+
+		sleep(1);
+
+		//5.递归调用
+		if(self::$keywordIndex<count(self::$keywordList)){
+			$this->collects($keyword);
+		}
 	}
 
 
@@ -82,7 +93,7 @@ class KeywordsAction extends BaseAction{
 	 * @param  [type] $data [description]
 	 * @return [type]       [description]
 	 */
-    function http_request($url, $data = null)  
+    function http_request($url, $data = null)
     {  
         $curl = curl_init();  
         curl_setopt($curl, CURLOPT_URL, $url);  
@@ -98,11 +109,24 @@ class KeywordsAction extends BaseAction{
         return $output;  
     }
 
+    public function testData(){
+    	for($i=0;$i<10;$i++){
+    		echo $i;
+    		ob_flush();
+    		flush();
+    		sleep(1);
+    	}
+    }
+
     public function test(){
-    	/*$a = array(1,2,3);
-    	$a = array_merge($a,array(4,5,6));
-    	$a = array_merge($a,array(7,8,9));
-    	dump($a);*/
-    	self::keywordList;
+    	$this->display();
+    	/*
+    	if(self::$keywordIndex++<10){
+    		var_dump(self::$keywordIndex);
+    		ob_flush();
+    		flush();
+    		sleep(1);
+    		$this->test();
+    	}*/
     }
 }

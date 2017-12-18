@@ -7,6 +7,7 @@ class BaseAction extends Action{
 	private $json = array();
 	
 	public function __construct(){
+		parent::__construct();
 		$this->json['status'] = 0;
 		$this->json['msg'] = "ok";
 		$this->json['data'] = (object)array();
