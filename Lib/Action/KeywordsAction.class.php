@@ -103,9 +103,13 @@ class KeywordsAction extends BaseAction{
             curl_setopt($curl, CURLOPT_POST, 1);  
             curl_setopt($curl, CURLOPT_POSTFIELDS, $data);  
         }
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);  
-        $output = curl_exec($curl);  
-        curl_close($curl);  
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
+        if(C('PROXY_FLAG')){
+        	curl_setopt($curl, CURLOPT_PROXY, C('PROXY_URL')); //代理服务器地址
+			curl_setopt($curl, CURLOPT_PROXYPORT, C('PROXY_PORT')); //代理服务器端口
+        }
+        $output = curl_exec($curl);
+        curl_close($curl);
         return $output;  
     }
 
@@ -119,7 +123,7 @@ class KeywordsAction extends BaseAction{
     }
 
     public function test(){
-    	$this->display();
+    	//$this->display();
     	/*
     	if(self::$keywordIndex++<10){
     		var_dump(self::$keywordIndex);
@@ -128,5 +132,6 @@ class KeywordsAction extends BaseAction{
     		sleep(1);
     		$this->test();
     	}*/
+    	echo $this->http_request('http://www.baidu.com');
     }
 }

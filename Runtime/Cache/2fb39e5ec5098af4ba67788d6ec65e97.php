@@ -1,4 +1,4 @@
-<script type="text/javascript" src="./Tpl/static/js/jquery.js"></script>
+<?php if (!defined('THINK_PATH')) exit();?><script type="text/javascript" src="./Tpl/static/js/jquery.js"></script>
 <script type="text/javascript">
 $(function(){
 	var keywordList = Array();
@@ -16,21 +16,21 @@ $(function(){
 		if(keywordList.length>0){
 			keyword = keywordList[keywordIndex++];
 		}
-		$.getJSON('{:U('Keywords/collect')}','keyword='+keyword,function(json){
+		$.getJSON('<?php echo U('Keywords/collect');?>','keyword='+keyword,function(json){
 			if(json.status>0){
 				log(json.msg);
 				clearInterval(thread);
 				return;
 			}
-			keywordList = keywordList.concat(json.data);
-			$.unique(keywordList);
 			$.each(json.data,function(key,value){
 				$('#keywordList').append(value+'\n');
 			});
+			keywordList = keywordList.concat(json.data);
+			$.unique(keywordList);
 		});
 	}
 	function log(str){
-		$('#log').append(new Date()+':'+str+'\n');
+		$('#log').append(now()+':'+str+'\n');
 	}
 });
 </script>

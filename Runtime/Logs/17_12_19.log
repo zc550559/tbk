@@ -2550,3 +2550,531 @@ INFO: [ view_end ] --START--
 INFO: ShowPageTrace Behavior ::run [ RunTime:0.004313s ]
 INFO: [ view_end ] --END-- [ RunTime:0.004599s ]
 
+[ 2017-12-19T10:53:50+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001654s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.001205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001285s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' F:\phpsites\tbk\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' F:\phpsites\tbk\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000786s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000614s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000443s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000689s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002798s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004989s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005071s ]
+
+[ 2017-12-19T10:53:55+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=Index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007290s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000355s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000310s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000233s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001370s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000535s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2017-12-19T10:53:57+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E7%BE%8E%E7%99%BD
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+
+[ 2017-12-19T10:54:00+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+
+[ 2017-12-19T10:54:03+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+
+[ 2017-12-19T10:54:06+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+
+[ 2017-12-19T10:54:09+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+
+[ 2017-12-19T10:54:12+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+
+[ 2017-12-19T10:54:15+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+
+[ 2017-12-19T10:54:15+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=Index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009399s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000588s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000552s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000499s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002651s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000824s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000888s ]
+
+[ 2017-12-19T10:55:20+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=Index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008906s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000542s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000461s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000259s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001826s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000531s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2017-12-19T10:55:21+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E7%BE%8E%E7%99%BD
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+
+[ 2017-12-19T10:55:24+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+
+[ 2017-12-19T10:55:27+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+
+[ 2017-12-19T10:55:30+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+
+[ 2017-12-19T10:55:32+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=Index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008604s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000511s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000476s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000369s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002193s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001233s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001315s ]
+
+[ 2017-12-19T11:14:21+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=Index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009845s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000537s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000382s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000302s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001800s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000605s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2017-12-19T11:14:24+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E7%BE%8E%E7%99%BD
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+
+[ 2017-12-19T11:15:19+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=Index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009286s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000543s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000491s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000361s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002128s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000703s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000764s ]
+
+[ 2017-12-19T11:15:25+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E7%BE%8E%E7%99%BD
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+
+[ 2017-12-19T14:43:51+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+
+[ 2017-12-19T14:44:00+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+
+[ 2017-12-19T14:44:02+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+
+[ 2017-12-19T14:51:21+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 109 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 109 行.
+
+[ 2017-12-19T14:51:22+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 109 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 109 行.
+
+[ 2017-12-19T14:52:46+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+
+[ 2017-12-19T14:53:25+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+
+[ 2017-12-19T14:53:33+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+
+[ 2017-12-19T14:53:54+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+
+[ 2017-12-19T14:57:08+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+
+[ 2017-12-19T14:58:32+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+
+[ 2017-12-19T14:58:33+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-12-19T14:58:33+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+
+[ 2017-12-19T14:58:33+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+
+[ 2017-12-19T14:59:09+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+
+[ 2017-12-19T14:59:18+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+
+[ 2017-12-19T14:59:23+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+
+[ 2017-12-19T14:59:24+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+
+[ 2017-12-19T14:59:34+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+
+[ 2017-12-19T14:59:38+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+
+[ 2017-12-19T14:59:39+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+
+[ 2017-12-19T14:59:39+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+
+[ 2017-12-19T15:00:17+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 107 行.
+NOTIC: [8] Undefined variable: ch F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given F:\phpsites\tbk\Lib\Action\KeywordsAction.class.php 第 108 行.
+
+[ 2017-12-19T15:00:29+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+
+[ 2017-12-19T15:07:52+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=Index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001357s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013016s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000780s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000696s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000519s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002937s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000882s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000948s ]
+
+[ 2017-12-19T15:07:57+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E7%BE%8E%E7%99%BD
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+
+[ 2017-12-19T15:07:59+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E6%80%8E%E6%A0%B7%E5%85%A8%E8%BA%AB%E6%B0%B8%E4%B9%85%E7%BE%8E%E7%99%BD%E5%81%8F%E6%96%B9
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+
+[ 2017-12-19T15:08:01+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E5%A4%A9%E7%94%9F%E9%BB%91%E5%BF%AB%E9%80%9F%E7%BE%8E%E7%99%BD%E7%9A%84%E6%96%B9%E6%B3%95
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001441s ]
+
+[ 2017-12-19T15:08:03+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E7%AE%80%E5%8D%95%E6%9C%89%E6%95%88%E7%BE%8E%E7%99%BD%E6%96%B9%E6%B3%95
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+
+[ 2017-12-19T15:08:05+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E5%85%A8%E8%BA%AB%E7%BE%8E%E7%99%BD%E7%9A%84%E6%96%B9%E6%B3%95%E5%B0%8F%E7%AA%8D%E9%97%A8
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+
+[ 2017-12-19T15:08:07+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E7%BE%8E%E7%99%BD%E9%A3%9F%E7%89%A9%E6%8E%92%E8%A1%8C%E6%A6%9C10%E5%BC%BA
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+
+[ 2017-12-19T15:08:09+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E4%B8%80%E5%91%A8%E5%BF%AB%E9%80%9F%E7%BE%8E%E7%99%BD%E5%B0%8F%E5%A6%99%E6%8B%9B
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+
+[ 2017-12-19T15:08:11+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E7%BE%8E%E7%99%BD%E8%A6%81%E5%A4%9A%E5%B0%91%E9%92%B1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+
+[ 2017-12-19T15:08:13+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E7%BE%8E%E7%99%BD%E7%9A%84%E5%A5%BD%E6%96%B9%E6%B3%95
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+
+[ 2017-12-19T15:08:15+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E6%80%8E%E4%B9%88%E7%BE%8E%E7%99%BD%E8%84%B8%E9%83%A8%E7%9A%AE%E8%82%A4
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+
+[ 2017-12-19T15:08:16+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E4%BB%80%E4%B9%88%E5%81%8F%E6%96%B9%E5%8F%AF%E4%BB%A5%E7%BE%8E%E7%99%BD%E5%85%A8%E8%BA%AB
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+
+[ 2017-12-19T15:08:19+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E5%85%A8%E8%BA%AB%E7%BE%8E%E7%99%BD%E7%9A%84%E6%9C%89%E6%95%88%E4%BA%A7%E5%93%81
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+
+[ 2017-12-19T15:08:20+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E6%80%8E%E6%A0%B7%E5%85%A8%E8%BA%AB%E6%B0%B8%E4%B9%85%E7%BE%8E%E7%99%BD
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001488s ]
+
+[ 2017-12-19T15:08:23+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E4%B8%AD%E8%8D%AF%E5%85%A8%E8%BA%AB%E7%BE%8E%E7%99%BD%E7%9A%84%E5%81%8F%E6%96%B9
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+
+[ 2017-12-19T15:08:25+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E4%BB%80%E4%B9%88%E6%96%B9%E6%B3%95%E5%8F%AF%E4%BB%A5%E5%85%A8%E8%BA%AB%E7%BE%8E%E7%99%BD
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+
+[ 2017-12-19T15:08:27+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E6%80%8E%E4%B9%88%E5%85%A8%E8%BA%AB%E7%BE%8E%E7%99%BD%E6%9C%80%E6%9C%89%E6%95%88
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+
+[ 2017-12-19T15:08:29+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E6%80%8E%E6%A0%B7%E6%89%8D%E8%83%BD%E7%BE%8E%E7%99%BD%E5%85%A8%E8%BA%AB
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+
+[ 2017-12-19T15:08:31+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E7%9A%AE%E8%82%A4%E9%BB%91%E7%94%A8%E4%BB%80%E4%B9%88%E5%8F%AF%E4%BB%A5%E7%BE%8E%E7%99%BD
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+
+[ 2017-12-19T15:08:33+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E5%A4%A9%E7%94%9F%E9%BB%91%E7%9A%AE%E8%82%A4%E8%83%BD%E5%8F%98%E7%99%BD%E5%90%97%E5%A5%B3
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+
+[ 2017-12-19T15:08:35+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E5%A4%A9%E7%94%9F%E9%BB%91%E7%9A%84%E4%BA%BA%E6%80%8E%E4%B9%88%E5%8F%98%E7%99%BD
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+
+[ 2017-12-19T15:08:37+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E5%A4%A9%E7%94%9F%E9%BB%91%E5%BF%AB%E9%80%9F%E7%BE%8E%E7%99%BD%E5%B0%8F%E7%A7%98%E6%96%B9
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+
+[ 2017-12-19T15:08:39+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E4%BA%94%E5%A4%A9%E5%BF%AB%E9%80%9F%E7%BE%8E%E7%99%BD%E8%84%B8%E7%9A%84%E6%96%B9%E6%B3%95
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+
+[ 2017-12-19T15:08:41+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E5%B0%8F%E5%AD%A9%E5%A4%A9%E7%94%9F%E9%BB%91%E7%BE%8E%E7%99%BD%E7%9A%84%E6%96%B9%E6%B3%95
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003067s ]
+
+[ 2017-12-19T15:08:43+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=collect&keyword=%E6%9C%89%E6%B2%A1%E6%9C%89%E5%BF%AB%E9%80%9F%E7%BE%8E%E7%99%BD%E6%96%B9%E6%B3%95
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+
+[ 2017-12-19T15:08:43+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=Index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011301s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000960s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002622s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000938s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000919s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005765s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000937s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000999s ]
+
+[ 2017-12-19T15:27:08+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+
+[ 2017-12-19T15:28:42+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+
+[ 2017-12-19T15:30:51+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+
+[ 2017-12-19T16:12:22+08:00 ] 127.0.0.1 /index.php?m=Keywords&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+
