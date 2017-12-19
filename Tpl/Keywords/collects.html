@@ -24,7 +24,8 @@ $(function(){
 			}
 			keywordList = keywordList.concat(json.data);
 			$.unique(keywordList);
-			$.each(json.data,function(key,value){
+			$('#keywordList').html('');
+			$.each(keywordList,function(key,value){
 				$('#keywordList').append(value+'\n');
 			});
 		});

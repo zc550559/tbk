@@ -22,15 +22,16 @@ $(function(){
 				clearInterval(thread);
 				return;
 			}
-			$.each(json.data,function(key,value){
-				$('#keywordList').append(value+'\n');
-			});
 			keywordList = keywordList.concat(json.data);
 			$.unique(keywordList);
+			$('#keywordList').html('');
+			$.each(keywordList,function(key,value){
+				$('#keywordList').append(value+'\n');
+			});
 		});
 	}
 	function log(str){
-		$('#log').append(now()+':'+str+'\n');
+		$('#log').append(new Date()+':'+str+'\n');
 	}
 });
 </script>
