@@ -1,42 +1,106 @@
 <script type="text/javascript" src="./Tpl/static/js/jquery.js"></script>
 <script type="text/javascript">
 $(function(){
+	//关键词列表
 	var keywordList = Array();
+	//当前关键词下标
 	var keywordIndex = 0;
+	//定时器索引
 	var thread;
 
 	$('#searchButton').click(function(){searchs()});
 
+	$('#threadButton').click(function(){
+		if($(this).data('flag')=='continue'){
+			searchs();
+			$(this).val('暂停');
+			$(this).data('flag','pause');
+		}else{
+			clearInterval(thread);
+			$(this).val('继续');
+			$(this).data('flag','continue');
+		}
+	});
+
+	
+
+	/**
+	 * 定时采集关键词
+	 * @return {[type]} [description]
+	 */
 	function searchs(){
 		thread = setInterval(function(){search()},2000);
 	}
 
+	/**
+	 * 采集关键词
+	 * @return {[type]} [description]
+	 */
 	function search(){
 		var keyword = $('#keyword').val();
 		if(keywordList.length>0){
 			keyword = keywordList[keywordIndex++];
 		}
+		log('当前采集关键词['+keywordIndex+']:'+keyword);
 		$.getJSON('{:U('Keywords/collect')}','keyword='+keyword,function(json){
 			if(json.status>0){
 				log(json.msg);
 				clearInterval(thread);
 				return;
 			}
-			keywordList = keywordList.concat(json.data);
-			$.unique(keywordList);
-			$('#keywordList').html('');
-			$.each(keywordList,function(key,value){
+			var diff = arrayDiff(keywordList,json.data);
+			keywordList = keywordList.concat(diff);
+			$.each(diff,function(key,value){
 				$('#keywordList').append(value+'\n');
 			});
 		});
 	}
+
+	/**
+	 * 获取两个数组的差集
+	 * @param  {[type]} a [description]
+	 * @param  {[type]} b [description]
+	 * @return {[type]}   [description]
+	 */
+	function arrayDiff(aArr,bArr){
+		if(aArr.length==0){return bArr}
+	　　var diff=[];
+	　　var str=aArr.join("&quot;&quot;");
+	　　for(var e in bArr){
+	　　if(str.indexOf(bArr[e])==-1){
+	　　　　diff.push(bArr[e]);
+	　　　　}
+	　　}
+	　　return diff;
+	}
+
+	/**
+	 * 获取当前格式化时间
+	 * @return {[type]} [description]
+	 */
+	function getFormatDate(){    
+	    var nowDate = new Date();     
+	    var year = nowDate.getFullYear();    
+	    var month = nowDate.getMonth() + 1 < 10 ? "0" + (nowDate.getMonth() + 1) : nowDate.getMonth() + 1;    
+	    var date = nowDate.getDate() < 10 ? "0" + nowDate.getDate() : nowDate.getDate();    
+	    var hour = nowDate.getHours()< 10 ? "0" + nowDate.getHours() : nowDate.getHours();    
+	    var minute = nowDate.getMinutes()< 10 ? "0" + nowDate.getMinutes() : nowDate.getMinutes();    
+	    var second = nowDate.getSeconds()< 10 ? "0" + nowDate.getSeconds() : nowDate.getSeconds();    
+	    return year + "-" + month + "-" + date+" "+hour+":"+minute+":"+second;    
+	}
+	/**
+	 * 打印日志
+	 * @param  {[type]} str [description]
+	 * @return {[type]}     [description]
+	 */
 	function log(str){
-		$('#log').append(new Date()+':'+str+'\n');
+		$('#log').prepend('<li>'+getFormatDate()+':'+str+'</li>');
 	}
 });
 </script>
-<input id="keyword" value="美白"> <input id="searchButton" type="button" value="百度搜索"><br /><br />
+<div><input id="keyword" value="美白"> <input id="searchButton" type="button" value="百度采集" /> <input id="threadButton" type="button" value="暂停" /></div>
+<h3>关键词列表:</h3><input id="clearKeywords" type="button" value="清空" />
 <textarea id="keywordList" cols="30" rows="20">
 </textarea>
-<h3>日志:</h3>
+<h3>日志:</h3><input id="clearLogs" type="button" value="清空" />
 <div id="log"></div>
