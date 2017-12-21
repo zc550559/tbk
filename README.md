@@ -30,10 +30,11 @@ tbk项目
 #### 参考文档
 
 > ThinkPHP完全开发手册3.1 http://doc.thinkphp.cn/manual/
+
 > sqlite建表
-<code>
+``` sql
 CREATE TABLE tp_test(
 ID INTEGER PRIMARY KEY AUTOINCREMENT,
 title NVARCHAR(100)
 )
-</code>
+```
