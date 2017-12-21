@@ -1,4 +1,5 @@
-<script type="text/javascript" src="./Tpl/static/js/jquery.js"></script>
+<?php if (!defined('THINK_PATH')) exit();?><script type="text/javascript" src="./Tpl/static/js/jquery.js"></script>
+<script type="text/javascript" src="./Tpl/static/js/jquery.zclip.js"></script>
 <script type="text/javascript">
 $(function(){
 	//关键词列表
@@ -8,18 +9,34 @@ $(function(){
 	//定时器索引
 	var thread;
 
-	$('#searchButton').click(function(){searchs()});
-
-	$('#threadButton').click(function(){
-		if($(this).data('flag')=='continue'){
-			searchs();
-			$(this).val('暂停');
-			$(this).data('flag','pause');
-		}else{
+	$('#searchButton').click(function(){
+		if($(this).data('flag')=='pause'){
 			clearInterval(thread);
-			$(this).val('继续');
+			$(this).val('继续采集');
 			$(this).data('flag','continue');
+		}else{
+			searchs();
+			$(this).val('暂停采集');
+			$(this).data('flag','pause');
 		}
+	});
+
+	$('#copyKeywords').zclip({  
+        path:'./Tpl/static/js/ZeroClipboard.swf',
+        copy:function(){
+            return $('#keywordList').val();  
+        },
+        afterCopy:function(){
+            log("复制成功");
+        }  
+    });
+	$('#clearKeywords').click(function(){
+		keywordList = Array();
+		keywordIndex = 0;
+		$('#keywordList').html('');
+	});
+	$('#clearLogs').click(function(){
+		$('#log').html('');
 	});
 
 	
@@ -42,7 +59,7 @@ $(function(){
 			keyword = keywordList[keywordIndex++];
 		}
 		log('当前采集关键词['+keywordIndex+']:'+keyword);
-		$.getJSON('{:U('Keywords/collect')}','keyword='+keyword,function(json){
+		$.getJSON('<?php echo U('Api/Keywords/collect');?>','keyword='+keyword,function(json){
 			if(json.status>0){
 				log(json.msg);
 				clearInterval(thread);
@@ -98,9 +115,11 @@ $(function(){
 	}
 });
 </script>
-<div><input id="keyword" value="美白"> <input id="searchButton" type="button" value="百度采集" /> <input id="threadButton" type="button" value="暂停" /></div>
-<h3>关键词列表:</h3><input id="clearKeywords" type="button" value="清空" />
-<textarea id="keywordList" cols="30" rows="20">
-</textarea>
-<h3>日志:</h3><input id="clearLogs" type="button" value="清空" />
+<div><input id="keyword" value="美白"> <input id="searchButton" type="button" value="开始采集" /> </div>
+<h3>关键词列表:</h3>
+<div><input id="copyKeywords" type="button" value="复制(vip)" /> <input id="clearKeywords" type="button" value="清空" /></div>
+<div><textarea id="keywordList" cols="30" rows="20">
+</textarea></div>
+<h3>日志:</h3>
+<div><input id="clearLogs" type="button" value="清空" /></div>
 <div id="log"></div>

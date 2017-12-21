@@ -10,7 +10,7 @@ class BaseAction extends Action{
 		parent::__construct();
 		$this->json['status'] = 0;
 		$this->json['msg'] = "ok";
-		$this->json['data'] = (object)array();
+		$this->json['data'];
 	}
 
 	/**
@@ -18,7 +18,7 @@ class BaseAction extends Action{
 	 * @param  [type]
 	 * @return [type]
 	 */
-	public function showData($data){
+	public function showData($data = array()){
 		if($this->localFlag){
 			$this->showLocal(false);
 			return $data;

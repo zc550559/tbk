@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?><div><h3>功能列表</h3></div><div><a href=/index.php?m=Keywords&a=Index>长尾关键词采集</a></div>

@@ -1,16 +1,6 @@
 <?php
 /**
- * 长尾关键词挖掘器
- * 采集百度长尾关键词
- * 1.通过关键词搜索
- * 2.过滤长尾关键词
- * 3.每个关键词递归查询
- *
- * todo
- * 数据去重
- * 
- * 4.根据不同分类存储不同类型,如城市/地区
- * 5.查询n个返回
+ * 长尾关键词挖掘器接口
  */
 class KeywordsAction extends BaseAction{
 
@@ -21,14 +11,6 @@ class KeywordsAction extends BaseAction{
 	//关键词下标
 	private static $keywordIndex = 0;
 	
-	/**
-	 * 入口
-	 */
-	public function Index(){
-		echo '<h1>长尾关键词挖掘器</h1>';
-		$this->collects();
-	}
-
 	/**
 	 * 采集关键词
 	 * @param  [type] $keyword [description]
@@ -51,11 +33,6 @@ class KeywordsAction extends BaseAction{
 		preg_match_all($reg, $keywors, $matches) or $this->showError(102,"没有匹配到长尾关键词");
 		return $this->showData($matches[1]);
 	}
-
-	public function collects(){
-		$this->display('collects');
-	}
-
 
 	/**
 	 * 递归采集关键词
