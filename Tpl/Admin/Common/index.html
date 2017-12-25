@@ -1,0 +1,16 @@
+<h2>分类管理</h2>
+<a href="{:U('edit')}">添加</a>
+<table border="1">
+	<tr>
+		<th>序号</th><th>标题</th><th>排序</th><th>操作</th>
+	</tr>
+	<volist name="list" id="each">
+		<tr>
+			<td>{$each.id}</td><td>{$each.title}</td><td>{$each.sort}</td>
+			<td>
+				<a href="{:U('edit',array('id'=>$each['id']))}">修改</a>
+				<a href="{:U('del',array('id'=>$each['id']))}" onclick="return confirm('确定删除?')">删除</a>
+			</td>
+		</tr>
+	</volist>
+</table>

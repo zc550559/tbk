@@ -17,7 +17,7 @@ class KeywordsAction extends Action{
 	/**
 	 * 入口
 	 */
-	public function Index(){
+	public function index(){
 		echo '<h1>长尾关键词挖掘器</h1>';
 		$this->collects();
 	}

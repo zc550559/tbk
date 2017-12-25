@@ -1,0 +1,10 @@
+<?php if (!defined('THINK_PATH')) exit();?><style type="text/css">*{ padding: 0; margin: 0; } div{ padding: 4px 48px;} body{ background: #fff; font-family: "微软雅黑"; color: #333;} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.8em; font-size: 36px }</style><div style="padding: 24px 48px;"> <h1>:)</h1><p>欢迎使用 <b>ThinkPHP</b>！</p></div>
+<div><h3>配置列表</h3></div>
+<div>
+	代理设置:<input type="checkbox"  <?php if((C("PROXY_FLAG")) == "1"): ?>checked='checked'<?php endif; ?> />
+</div>
+<div><h3>功能列表</h3></div>
+<div><a href='<?php echo U('Keywords/index');?>'>长尾关键词采集</a></div>
+<div><h3>后台列表</h3></div>
+<div><a href='<?php echo U('Admin/Index/index');?>'>首页</a></div>
+<div><a href='<?php echo U('Admin/Cat/index');?>'>分类管理</a></div>
