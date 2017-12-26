@@ -1,6 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><script type="text/javascript" src="./Tpl/static/js/jquery.js"></script>
-<script type="text/javascript" src="./Tpl/static/js/jquery.zclip.js"></script>
-<script type="text/javascript">
+<?php if (!defined('THINK_PATH')) exit();?><script type="text/javascript">
 $(function(){
 	//关键词列表
 	var keywordList = Array();
@@ -115,6 +113,8 @@ $(function(){
 	}
 });
 </script>
+<h1>长尾关键词挖掘</h1>
+<p>欢迎使用</p>
 <div><input id="keyword" value="美白"> <input id="searchButton" type="button" value="开始采集" /> </div>
 <h3>关键词列表:</h3>
 <div><input id="copyKeywords" type="button" value="复制(vip)" /> <input id="clearKeywords" type="button" value="清空" /></div>

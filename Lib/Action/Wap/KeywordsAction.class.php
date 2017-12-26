@@ -12,7 +12,7 @@
  * 4.根据不同分类存储不同类型,如城市/地区
  * 5.查询n个返回
  */
-class KeywordsAction extends Action{
+class KeywordsAction extends BaseAction{
 
 	/**
 	 * 入口
