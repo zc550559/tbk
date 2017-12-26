@@ -1,4 +1,4 @@
-<style type="text/css">
+<?php if (!defined('THINK_PATH')) exit();?><style type="text/css">
 #main{
 	margin: 0 auto;
 	padding: 2px;

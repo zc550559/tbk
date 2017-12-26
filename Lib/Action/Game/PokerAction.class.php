@@ -17,6 +17,7 @@ class PokerAction extends BaseAction{
 
 	/**
 	 * 关卡列表
+	 * 说明:关卡设置:卡牌数量+总步数
 	 * @return [type] [description]
 	 */
 	public function lists(){
