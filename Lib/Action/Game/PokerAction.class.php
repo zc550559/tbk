@@ -21,6 +21,8 @@ class PokerAction extends BaseAction{
 	 * @return [type] [description]
 	 */
 	public function lists(){
+		$pass = M('pass')->select();
+		$this->assign('pass',$pass);
 		$this->display();
 	}
 
@@ -29,6 +31,11 @@ class PokerAction extends BaseAction{
 	 * @return [type] [description]
 	 */
 	public function detail($id){
+		$ids = M('pass')->where('id='.$id)->getField('letters');
+		$condition['id'] = array('in',$ids);
+		$data = M('letter')->where($condition)->select();
+		$dataJson = json_encode($data);
+		$this->assign('dataList',$dataJson);
 		$this->display();
 	}
 }

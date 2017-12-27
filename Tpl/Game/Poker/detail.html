@@ -54,13 +54,16 @@
 $(function(){
 
 	//定义变量
+	/*
 	var dataList = [
-		{'speak':'a','lower':'あ','high':'ア','color':'ff0000'},    
-		{'speak':'i','lower':'い','high':'イ','color':'00ff00'}, 
-		{'speak':'w','lower':'う','high':'ウ','color':'0000ff'}, 
-		{'speak':'e','lower':'え','high':'エ','color':'ffff00'}, 
-		{'speak':'o','lower':'お','high':'オ','color':'ff00ff'},
+		{'speak':'a','low':'あ','high':'ア','color':'ff0000'},    
+		{'speak':'i','low':'い','high':'イ','color':'00ff00'}, 
+		{'speak':'w','low':'う','high':'ウ','color':'0000ff'}, 
+		{'speak':'e','low':'え','high':'エ','color':'ffff00'}, 
+		{'speak':'o','low':'お','high':'オ','color':'ff00ff'},
 	];
+	*/
+	var dataList = {$dataList};
 	var pre = null;
 	var success = false;
 	var steps = 0;
@@ -84,7 +87,7 @@ $(function(){
 			'		<img src="./Tpl/static/images/default.jpg">'+
 			'	</div>'+
 			'	<div style="transform:rotateY(-90deg)">'+
-			'		<label style="color:#'+obj.color+'">'+obj.lower+'</label><font  style="color:#'+obj.color+'">'+obj.high+'</font>'+
+			'		<label style="color:#'+obj.color+'">'+obj.low+'</label><font  style="color:#'+obj.color+'">'+obj.high+'</font>'+
 			'		<span>'+obj.speak+'</span>'+
 			'	</div>'+
 			'</div>'

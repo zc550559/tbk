@@ -1,71 +1,72 @@
 <?php if (!defined('THINK_PATH')) exit();?><style type="text/css">
-*{font-size: 12px}
-img{
-	width: 95px;
-	height:150px;
-	border-radius: 5px;
-}
-a{
-	text-decoration: none;
-}
 #main{
 	margin: 0 auto;
 	padding: 2px;
-	height:100%;
-	overflow: scroll;
+	width: 100%;
+	height:90%;
+	position: absolute;
+	overflow: auto;
 }
 .poker{
-	width: 30%;
+	width: 23%;
 	height:150px;
 	margin: 0 5px 5px 0;
 	float:left;
 }
 .poker div{
-	width: 95px;
+	width: 88px;
 	transition: 0.3s;
 	position: absolute;
 }
-.poker span{
-	width: 95px;
+.poker img{
+	width: 88px;
+	height:150px;
+	border-radius: 5px;
+}
+.poker label{
+	font-size:50px;
+	height: 100px;
+	line-height: 120px;
 	text-align: center;
-	margin-top: -16px;
-	color: white;
-	background-color:#333;
+	border: solid 1px #666;
+	border-radius:5px 5px 0 0;
+	display: block;
+}
+.poker font{
+	font-size:30px;
+	margin:0;
+	top:0;
+	right:0;
 	position: absolute;
 }
-.button{
-	width: 40px;
-	height: 40px;
+.poker span{
 	text-align: center;
-	font-weight: bold;
-	line-height: 40px;
-	border-radius: 20px;
-	color:white;
-	background-color:#3398de;
+	font-size: 25px;
+	color: #666;
+	background-color:#666;
 	display: block;
-	z-index: 9;
-	position: fixed;
-	top:70;
-	right: 5;
+}
+.poker span.show{
+	color:white;
 }
 </style>
 <script type="text/javascript">
 $(function(){
 
 	//定义变量
+	/*
 	var dataList = [
-		{'name':'拔丝苹果','file':'bspg.jpg'},
-		{'name':'四喜丸子','file':'sxwz.jpg'},
-		{'name':'家常黄焖鸡','file':'jchmj.jpg'},
-		{'name':'葱烧海参','file':'cshs.jpg'},
-		{'name':'泡椒凤爪','file':'pjfz.jpg'},
-		{'name':'济南把子肉','file':'jnbzr.jpg'},
-		{'name':'豆角小炒肉','file':'djxcr.jpg'},
-		{'name':'蒜泥拌白肉','file':'snbbr.jpg'},
-		{'name':'麻粉肘子','file':'mfzz.jpg'},
+		{'speak':'a','low':'あ','high':'ア','color':'ff0000'},    
+		{'speak':'i','low':'い','high':'イ','color':'00ff00'}, 
+		{'speak':'w','low':'う','high':'ウ','color':'0000ff'}, 
+		{'speak':'e','low':'え','high':'エ','color':'ffff00'}, 
+		{'speak':'o','low':'お','high':'オ','color':'ff00ff'},
 	];
+	*/
+	var dataList = <?php echo ($dataList); ?>;
 	var pre = null;
 	var success = false;
+	var steps = 0;
 
 	//数据加工
 	var showList = [];
@@ -86,8 +87,8 @@ $(function(){
 			'		<img src="./Tpl/static/images/default.jpg">'+
 			'	</div>'+
 			'	<div style="transform:rotateY(-90deg)">'+
-			'		<img src="./Tpl/static/images/'+obj.file+'">'+
-			'		<span>'+obj.name+'</span>'+
+			'		<label style="color:#'+obj.color+'">'+obj.low+'</label><font  style="color:#'+obj.color+'">'+obj.high+'</font>'+
+			'		<span>'+obj.speak+'</span>'+
 			'	</div>'+
 			'</div>'
 		);
@@ -96,7 +97,8 @@ $(function(){
 	//事件绑定
 	$('.poker').each(function(){
 		$(this).children().eq(0).click(function(){
-
+			//设置总步数
+			$('#steps').html(++steps);
 			//重置之前poker
 			if(success==false&&pre!=null){
 				data = $(this).parent().attr('data');
@@ -108,6 +110,8 @@ $(function(){
 						$(tmp).css('transform','rotateY(0deg)');
 					},300);
 				}else{
+					$(this).parent().find('span').addClass('show');
+					$(pre).parent().find('span').addClass('show');
 					success = true;
 				}
 			}else{
@@ -124,9 +128,12 @@ $(function(){
 	});
 });
 </script>
-<div>
-	<a href="javascript:location.href=location.href+Math.random();" class="button">重玩</a>
-</div>
 <div id="main">
-	
+	<h1>日语翻牌游戏</h1>
+	<p>
+	<h4>计分板</h4>
+	总步数:<label id="steps">0</label>	
+	</p>
+	<div><a class="weui-btn weui-btn_plain-default" href="javascript:location.href=location.href+Math.random();">重玩</a></div>
+	<br />
 </div>
