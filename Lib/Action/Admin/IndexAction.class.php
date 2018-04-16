@@ -1,7 +1,9 @@
 <?php
 /**
- * 代码生成器
+ * 后台
  */
-class CodeBuilderAction extends Action{
-	
+class IndexAction extends BaseAction{
+	public function index(){
+		$this->display();
+	}
 }

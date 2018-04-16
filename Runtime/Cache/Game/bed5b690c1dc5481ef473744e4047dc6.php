@@ -5,7 +5,7 @@
 <div class="weui-cells">
 	<a class="weui-cell weui-cell_access" href="<?php echo U('Game/Poker/index');?>">
 		<div class="weui-cell__hd"><img class="imgList" src="./Tpl/static/weui/images/icon.png"></div>
-		<div class="weui-cell__bd">日语元音翻牌</div>
+		<div class="weui-cell__bd">日语元音翻牌游戏</div>
 		<span class="weui-cell__ft"></span>
 	</a>
 </div>

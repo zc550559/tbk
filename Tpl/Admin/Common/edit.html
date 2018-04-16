@@ -1,0 +1,16 @@
+<h2>分类管理</h2>
+<a href="{:U('index')}">列表</a>
+<form action="{:U('save')}" method="post">
+<input name="id" type="text" value="{$id}" />
+<table border="0">
+	<tr>
+		<th>名称:</th><td><input name="title" value="{$each.title}" /></td>
+	</tr>
+	<tr>
+		<th>排序:</th><td><input name="sort" value="{$each.sort}" /></td>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="submit" value="保存" /></td>
+	</tr>
+</table>
+</form>

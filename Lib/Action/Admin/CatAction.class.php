@@ -9,10 +9,21 @@ class CatAction extends BaseAction{
 	 * @return [type] [description]
 	 */
 	public function index(){
+		//导航
 		$this->assign('nav','分类管理');
 
-		$list = M('cat')->select();
+		//分页
+		import('ORG.Util.Page');
+		$count = M('goods_cat')->count();
+		$page = new Page($count);
+		$show = $page->show();
+
+		//查询数据
+		$list = M('goods_cat')->limit($page->firstRow.','.$page->listRows)->order('sort desc')->select();
+
+		//视图渲染
 		$this->assign('list',$list);
+		$this->assign('page',$show);
 		$this->display('Common/index');
 	}
 
@@ -20,12 +31,34 @@ class CatAction extends BaseAction{
 	 * 编辑
 	 */
 	public function edit($id=0){
-		if($id==0){
-
-		}else{
-			$each = M('cat')->where('id='.$id)->find();
+		if($id){
+			$each = M('goods_cat')->where('id='.$id)->find();
 			$this->assign('each',$each);
+		}else{
+
 		}
+		$this->assign('id',$id);
 		$this->display('Common/edit');
+	}
+
+	/**
+	 * 保存
+	 */
+	public function save(){
+		$id = $_POST['id'];
+		if($id){
+			M('goods_cat')->where('id='.$id)->save($_POST);
+		}else{
+			M('goods_cat')->add($_POST);
+		}
+		$this->success('保存成功',U('index'));
+	}
+
+	/**
+	 * 删除
+	 */
+	public function del($id){
+		M('goods_cat')->where('id='.$id)->delete();
+		$this->success('删除成功',U('index'));
 	}
 }

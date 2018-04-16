@@ -1,4 +1,4 @@
-<h2>分类管理</h2>
+<h1>分类管理</h1>
 <a href="{:U('edit')}">添加</a>
 <table border="1">
 	<tr>
@@ -13,4 +13,34 @@
 			</td>
 		</tr>
 	</volist>
+	<tr>
+		<td colspan="4">{$page}</td>
+	</tr>
 </table>
+
+<div class="weui-panel">
+	<div class="weui-panel__bd">
+		<div class="weui-media-box weui-media-box_small-appmsg">
+			<!-- <div class="weui-cells">
+				<a class="weui-cell weui-cell_access" href='{:U('edit',array('id'=>$each['id']))}'>
+					<div class="weui-cell__hd">序-</div>
+					<div class="weui-cell__bd">标题</div>
+					<span class="weui-cell__ft">排序</span>
+				</a>
+			</div> -->
+			<div class="weui-cells">
+				<volist name="list" id="each">
+				<a class="weui-cell weui-cell_access" href='{:U('edit',array('id'=>$each['id']))}'>
+					<div class="weui-cell__hd">{$each.id}-</div>
+					<div class="weui-cell__bd">{$each.title}</div>
+					<span class="weui-cell__ft">{$each.sort}</span>
+				</a>
+				</volist>
+				<a class="weui-cell" href='javascript:;'>
+					<div class="weui-cell__bd">{$page}</div>
+					<span class="weui-cell__ft"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -39,10 +39,6 @@
 					<div class="weui-cell__bd">首页</div>
 					<span class="weui-cell__ft"></span>
 				</a>
-				<a class="weui-cell weui-cell_access" href='<?php echo U('Admin/Cat/index');?>'>
-					<div class="weui-cell__bd">分类管理</div>
-					<span class="weui-cell__ft"></span>
-				</a>
 			</div>
 		</div>
 	</div>
