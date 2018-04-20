@@ -61,3 +61,11 @@ ID INTEGER PRIMARY KEY AUTOINCREMENT,
 title NVARCHAR(100)
 )
 ```
+
+>git命令
+``` git
+更新:git pull
+添加:git add *
+提交:git commit -m '注释'
+推送:git push origin master
+```
