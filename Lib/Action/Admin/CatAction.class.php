@@ -15,7 +15,7 @@ class CatAction extends BaseAction{
 		//分页
 		import('ORG.Util.Page');
 		$count = M('goods_cat')->count();
-		$page = new Page($count);
+		$page = new Page($count,1);
 		$show = $page->show();
 
 		//查询数据
