@@ -64,6 +64,7 @@ title NVARCHAR(100)
 
 >git命令
 ``` git
+克隆:git clone https://github.com/zc550559/tbk.git
 更新:git pull
 添加:git add *
 提交:git commit -m '注释'
